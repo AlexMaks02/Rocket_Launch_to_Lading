@@ -1,0 +1,16 @@
+--fdm=external
+--native-fdm=socket,in,30,127.0.0.1,5502,udp
+--enable-sound
+--enable-auto-coordination
+--enable-clouds3d
+--fog-disable
+--visibility=15000
+--disable-freeze
+--start-date-lat=2022:10:27:09:00:00
+--heading=0
+--pitch=0
+--offset-distance=0
+--offset-azimuth=0
+--enable-rembrandt
+--in-air
+--altitude=500
