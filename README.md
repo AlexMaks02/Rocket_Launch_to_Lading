@@ -39,7 +39,7 @@ The following additional settings are required to connect the Simuling to the Fl
 
 ![Vostok Rocket mid flight](https://github.com/AlexMaks02/Rocket_Launch_to_Landing/blob/main/figs/Vostok_2.png)
 
-![6DoF Controller](https://github.com/AlexMaks02/Rocket_Launch_to_Landing/blob/main/figs/2FlightGear.png)
+![6DoF Controller](https://github.com/AlexMaks02/Rocket_Launch_to_Landing/blob/main/figs/2FlightGear.PNG)
 
 ## Additional Information
 [From takeoff to landing of a spacex-like rocket (Video Demonstration.)](https://www.youtube.com/watch?v=jXIwPWmPuBg&t=171s&ab_channel=Maks)
