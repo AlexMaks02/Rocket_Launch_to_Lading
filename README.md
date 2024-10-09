@@ -1,6 +1,6 @@
 # Control of the "SpaceX Launcher-Like Vehicle" from Rocket Launch to Landing
 
-This project simulates a "SpaceX launcher-like vehicle" from launch to landing, using Simulink and MATLAB R2022b.
+This project simulates a "SpaceX launcher-like vehicle" from launch to landing, using Simulink, MATLAB R2022b, and FlightGear Flight Simulator.
 
 ## Requirements
 ### MATLAB Toolboxes:
