@@ -1,20 +1,21 @@
-# Control of the "SpaceX launcher like vehicle" from rocket launch to landing
-MatLab Simulation of a "SpaceX launcher like vehicle" from rocket launch to landing. 
-Work developed in Simulink & Matlab R2022b;
+# Control of the "SpaceX Launcher-Like Vehicle" from Rocket Launch to Landing
 
-MatLab toolboxes required:
-  - Aerospace toolbox;
-  - Aerospace Blockset;
+This project simulates a "SpaceX launcher-like vehicle" from launch to landing, using Simulink and MATLAB R2022b.
 
-The coordinates of the Rocket are computed in 6 DoF and transmitted to the FlightGear (to display) via UDP socket.
+## Requirements
+### MATLAB Toolboxes:
+  - Aerospace Toolbox
+  - Aerospace Blockset
 
-## FlightGear
-[FlightGear Flight Simulator](https://www.flightgear.org/)
+The rocket’s coordinates are computed in 6 Degrees of Freedom (DoF) and transmitted to [FlightGear](https://www.flightgear.org/) for visualization via a UDP socket.
 
-![](https://github.com/AlexMaks02/Rocket_Launch_to_Landing/blob/main/figs/FlightGear.png)
+## FlightGear Setup
 
-Its required to download and install any vehicle, the Vostok-1 is recommended.
-The following additional settings are required to connect the Simuling to the FlightGear via socket.
+To use FlightGear for visualization, you’ll need to download and install a vehicle. The **Vostok-1** is recommended. 
+
+### FlightGear Connection Settings
+
+Use the following command-line options to connect Simulink to FlightGear via a UDP socket:
 
 ```
 --fdm=external
@@ -35,15 +36,24 @@ The following additional settings are required to connect the Simuling to the Fl
 --altitude=500
 ```
 
+![FlightGear Simulation](https://github.com/AlexMaks02/Rocket_Launch_to_Landing/blob/main/figs/FlightGear.png)
+
 ## Implementation Details & Results
 
-![Vostok Rocket mid flight](https://github.com/AlexMaks02/Rocket_Launch_to_Landing/blob/main/figs/Vostok_2.png)
+In this simulation, a 6DoF controller is used to manage the vehicle's flight path from takeoff to landing. 
 
-![6DoF Controller](https://github.com/AlexMaks02/Rocket_Launch_to_Landing/blob/main/figs/2FlightGear.PNG)
+### Example Results:
 
-## Additional Information
-[From takeoff to landing of a spacex-like rocket (Video Demonstration.)](https://www.youtube.com/watch?v=jXIwPWmPuBg&t=171s&ab_channel=Maks)
+- Vostok Rocket Mid-Flight:
+  
+  ![Vostok Rocket mid flight](https://github.com/AlexMaks02/Rocket_Launch_to_Landing/blob/main/figs/Vostok_2.png)
 
-[FlightGear Command line options](https://wiki.flightgear.org/Command_line_options)
+- 6DoF Controller View:
+  
+  ![6DoF Controller](https://github.com/AlexMaks02/Rocket_Launch_to_Landing/blob/main/figs/2FlightGear.PNG)
 
-VDEngineering. (s.d.). [Rocket Takeoff and Landing! - Matlab & Simulink Tutorial](https://www.youtube.com/watch?v=jI0eWIgXsT4&ab_channel=VDEngineering)
+## Additional Resources
+
+- [Video Demonstration: SpaceX-Like Rocket From Takeoff to Landing](https://www.youtube.com/watch?v=jXIwPWmPuBg&t=171s&ab_channel=Maks)
+- [FlightGear Command Line Options](https://wiki.flightgear.org/Command_line_options)
+- VDEngineering (n.d.). [Rocket Takeoff and Landing Tutorial - MATLAB & Simulink](https://www.youtube.com/watch?v=jI0eWIgXsT4&ab_channel=VDEngineering)
